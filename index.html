@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: 'IBM Plex Sans', sans-serif;
+                color: white;
+                font-size: 24px;
+            }
+        
+            .avatar {
+                position: absolute;
+                right: 0;
+                bottom: 4rem;
+                margin-right: 4rem;
+            }
+        
+            .avatar img {
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                border: 5px solid;
+            }
+        
+            .opengraph {
+                height: 630px;
+                width: 1200px;
+            }
+        
+            #container {
+                position: absolute;
+                padding: 4rem;
+                display: flex;
+                background-image: radial-gradient(
+                    circle at 17% 77%, 
+                    rgba(17, 17, 17, 0.04) 0%, 
+                    rgba(17, 17, 17, 0.04) 50%, 
+                    rgba(197, 197, 197, 0.04) 50%, 
+                    rgba(197, 197, 197, 0.04) 100%
+                ), radial-gradient(
+                    circle at 26% 17%, 
+                    rgba(64, 64, 64, 0.04) 0%, 
+                    rgba(64, 64, 64, 0.04) 50%, 
+                    rgba(244, 244, 244, 0.04) 50%, 
+                    rgba(244, 244, 244, 0.04) 100%
+                ), radial-gradient(
+                    circle at 44% 60%, 
+                    rgba(177, 177, 177, 0.04) 0%, 
+                    rgba(177, 177, 177, 0.04) 50%, 
+                    rgba(187, 187, 187, 0.04) 50%, 
+                    rgba(187, 187, 187, 0.04) 100%
+                ), linear-gradient(
+                    19deg, 
+                    rgb(86, 71, 135), 
+                    rgb(86, 71, 135)
+                );
+                overflow: hidden;
+            }
+        
+            .column {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        
+            .background h1 {
+                font-size: 85px;
+                font-weight: 700;
+            }
+        
+            .meta {
+                display: flex;
+                justify-content: space-between;
+                vertical-align: bottom;
+            }
+        
+            .meta span {
+                margin-top: 10px;
+                text-align: center;
+            }
+        
+            ul {
+                list-style-type: none;
+                display: flex;
+            }
+        
+            ul li {
+                margin-right: 0.5rem;
+            }
+        
+            ul li:not(:last-child):after {
+                content: "·";
+                margin-left: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container" class="opengraph">
+            <div class="background column">
+                <h1>Creating Social Images with Puppeteer</h1>
+                <div class="meta">
+                    <ul>
+                        <li>ianwootten.co.uk</li>
+                    </ul>
+                    <div class="avatar column">
+                        <img src="https://pbs.twimg.com/profile_images/477375282282639360/Hwey7g16_400x400.jpeg" />
+                        <span>@iwootten</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
